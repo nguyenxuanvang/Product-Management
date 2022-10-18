@@ -139,24 +139,24 @@ buttonNode.addEventListener('click',() => {
                 </td>
             `;
             deleteButtons = document.querySelectorAll('.delete-button');
-            const deleteElement = deleteButtons[deleteButtons.length-1];
+            const deleteElement = trNode.querySelector('.delete-button');
             deleteElement.addEventListener('click',(event)=>{
                 event.preventDefault();
                 deleteFunction(deleteElement);
             });
             editButtons = document.querySelectorAll('.edit-button');
-            const editElement = editButtons[editButtons.length-1];
+            const editElement = trNode.querySelector('.edit-button');
             editElement.addEventListener('click',(event)=>{
                 event.preventDefault();
                 editFunction(editElement);
             });
             saveButtons = document.querySelectorAll('.save-button');
-            const saveElement = saveButtons[saveButtons.length-1];
+            const saveElement = trNode.querySelector('.save-button');
             saveElement.addEventListener('click',() => {
                     saveFuction(saveElement);
                 });
             cancelButtons = document.querySelectorAll('.cancel-button');
-            const cancelElement = cancelButtons[cancelButtons.length-1];
+            const cancelElement = trNode.querySelector('.cancel-button');
             cancelElement.addEventListener('click',() => {
                 cancelFunction(cancelElement); 
             });
